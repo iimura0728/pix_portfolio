@@ -77,13 +77,14 @@ $(function () {
   }
 
   function addLoadEffects() {
-    const $validate = $('a[href ^= "http://"]' + 'a[target != "_blank"]');
+    const $validate = $('a[target != "_blank"]');
 
-    function fadeOutOnLoad(e) {
+    function fadeOut(e) {
       e.preventDefault();
 
       const $this = $(this);
       const url = $this.attr("href");
+      console.log("fadeOutOnLoad -> url", url);
 
       $(".bodyInner").fadeOut(800);
 
@@ -92,13 +93,13 @@ $(function () {
       }, 1000);
     }
 
-    function fadeInOnLoad() {
+    function fadeIn() {
       $(".bodyInner").delay(400).fadeIn(800);
     }
 
     function init() {
-      $(window).on("load", fadeInOnLoad);
-      $validate.on("click", fadeOutOnLoad);
+      $(window).on("load", fadeIn);
+      $validate.on("click", fadeOut);
     }
 
     init();
