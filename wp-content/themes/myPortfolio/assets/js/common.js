@@ -16,7 +16,8 @@ $(function () {
     let $this = "";
 
     function changeLineWidth($this, value) {
-      if (!$this.hasClass("current")) {
+      // if (!$this.hasClass("current")) {
+      if (!$this.hasClass("current_page_item")) {
         $this
           .find(".line")
           .stop()

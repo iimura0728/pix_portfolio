@@ -305,7 +305,11 @@ header .glbNav .item .line {
   width: 0%;
 }
 
-header .glbNav .item.current .line {
+/* header .glbNav .item.current .line {
+  width: 140%;
+} */
+
+header .glbNav .item.current_page_item .line {
   width: 140%;
 }
 
