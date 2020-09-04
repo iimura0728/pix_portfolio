@@ -1,6 +1,14 @@
 $(function () {
   const $header = $("header");
 
+  function getWindowHeight() {
+    let windowHeight = $(window).height();
+    document.documentElement.style.setProperty(
+      "--vh-window",
+      windowHeight + "px"
+    );
+  }
+
   function activeUnderLine() {
     const $glbNav = $(".glbNav");
     const $listItem = $glbNav.find(".item");
@@ -103,10 +111,16 @@ $(function () {
   }
 
   function eventSet() {
-    $(window).on("scroll resize load", changeHeader);
+    $(window).on({
+      scroll: changeHeader,
+      resize: changeHeader,
+      resize: getWindowHeight,
+      load: changeHeader,
+    });
   }
 
   function init() {
+    getWindowHeight();
     activeUnderLine();
     showSpNav();
     eventSet();

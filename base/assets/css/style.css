@@ -166,7 +166,7 @@ textarea {
 
 /* --global------------------------------ */
 .bodyInner {
-  height: 100vh;
+  min-height: var(--vh-window);
   opacity: 0;
   width: 100%;
 }
@@ -573,6 +573,7 @@ footer .copyright {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: calc(var(--vh-window) - 80px);
 }
 
 .topPage .headingWrap .heading {
@@ -582,14 +583,14 @@ footer .copyright {
 @media print, screen and (min-width: 426px) {
   .topPage .headingWrap {
     align-items: center;
-    height: calc(100vh - 80px);
+    /* height: calc(100vh - 80px); */
   }
 }
 
 @media print, screen and (max-width: 425px) {
   .topPage .headingWrap {
     align-items: left;
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
   }
 
   .topPage .headingWrap .spVisible {
