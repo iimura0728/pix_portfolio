@@ -487,39 +487,44 @@ footer .copyright {
   }
 
   .common .spImage {
-    position: relative;
-  }
-
-  .common .spImage {
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    /* background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     left: 0;
-    width: 100%;
+    position: relative;
+    width: 100%; */
   }
 
   .common .spImage {
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 120px;
+    position: fixed;
+    position: absolute;
+    top: 0%;
+    width: 100%;
   }
 }
 
 @media print, screen and (max-width: 767px) and (min-width: 426px) {
-  .common .spImage {
-    height: 380px;
+  .common .spImageWrap {
+    padding-top: calc(480px - 120px);
   }
 
-  .common .spImage + *::before {
-    padding-top: 380px;
+  .common .spImage {
+    height: 480px;
   }
 }
 
 @media print, screen and (max-width: 425px) {
-  .common .spImage {
-    height: 310px;
+  .common .spImageWrap {
+    padding-top: calc(420px - 120px);
   }
 
-  .common .spImage + *::before {
-    padding-top: 310px;
+  .common .spImage {
+    height: 420px;
   }
 }
 /* ./common */
@@ -567,7 +572,7 @@ footer .copyright {
 
 /* profilePage */
 .profilePage {
-  padding: 100px 0;
+  /* padding: 100px 0; */
 }
 
 .profilePage .section .heading {
