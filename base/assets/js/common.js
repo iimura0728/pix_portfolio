@@ -69,7 +69,6 @@ $(function () {
   function fadeBody() {
     function hideBody() {
       $(".bodyInner").addClass("is-hide");
-      // $(".bodyInner").addClass("is-show");
     }
 
     function showBody() {
