@@ -166,9 +166,39 @@ textarea {
 
 /* --global------------------------------ */
 .bodyInner {
-  display: none;
+  /* display: none; */
   height: 100vh;
+  opacity: 0;
+  /* opacity: 1; */
   width: 100%;
+}
+
+.bodyInner.is-show {
+  animation: showBody 1s forwards;
+}
+
+.bodyInner.is-hide {
+  animation: hideBody 1s;
+}
+
+@keyframes showBody {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hideBody {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .mask {

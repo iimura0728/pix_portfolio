@@ -66,6 +66,33 @@ $(function () {
     init();
   }
 
+  function fadeBody() {
+    function hideBody() {
+      $(".bodyInner").addClass("is-hide");
+      // $(".bodyInner").addClass("is-show");
+    }
+
+    function showBody() {
+      $(".bodyInner").addClass("is-show");
+    }
+
+    function refreshPage() {
+      if (event.persisted) {
+        window.location.reload();
+      }
+    }
+
+    function init() {
+      const $validate = $('a[target != "_blank"]');
+      $validate.on("click", hideBody);
+      $(window).on({
+        load: showBody,
+        pageshow: refreshPage,
+      });
+    }
+    init();
+  }
+
   function changeHeader() {
     let scrollPos = $(window).scrollTop();
 
@@ -76,35 +103,6 @@ $(function () {
     }
   }
 
-  function addLoadEffects() {
-    const $validate = $('a[target != "_blank"]');
-
-    function fadeOut(e) {
-      e.preventDefault();
-
-      const $this = $(this);
-      const url = $this.attr("href");
-      console.log("fadeOutOnLoad -> url", url);
-
-      $(".bodyInner").fadeOut(800);
-
-      setTimeout(function () {
-        location.href = url;
-      }, 1000);
-    }
-
-    function fadeIn() {
-      $(".bodyInner").delay(400).fadeIn(800);
-    }
-
-    function init() {
-      $(window).on("load", fadeIn);
-      $validate.on("click", fadeOut);
-    }
-
-    init();
-  }
-
   function eventSet() {
     $(window).on("scroll resize load", changeHeader);
   }
@@ -113,7 +111,7 @@ $(function () {
     activeUnderLine();
     showSpNav();
     eventSet();
-    addLoadEffects();
+    fadeBody();
   }
 
   init();
