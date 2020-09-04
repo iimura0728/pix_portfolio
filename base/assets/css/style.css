@@ -6,6 +6,9 @@
   --color-secondary:#d6c7c1;
   --color-tertiary:#888888;
   --color-white:#ffffff;
+  --height-header: 50px;
+  --height-pcFooter: 30px;
+  --height-spFooter: 50px;
   --style-boxShadow: 0 -10px 7px 10px var(--color-font);
 }
 
@@ -536,7 +539,17 @@ footer .copyright {
   }
 }
 
+@media print, screen and (min-width: 426px) {
+  .common {
+    min-height: calc(var(--vh-window) - var(--height-pcFooter));
+  }
+}
+
 @media print, screen and (max-width: 425px) {
+  .common {
+    min-height: calc(var(--vh-window) - var(--height-spFooter));
+  }
+
   .common .spImageWrap {
     padding-top: calc(420px - 120px);
   }
@@ -563,7 +576,6 @@ footer .copyright {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: calc(var(--vh-window) - 80px);
 }
 
 .topPage .headingWrap .heading {
@@ -573,12 +585,14 @@ footer .copyright {
 @media print, screen and (min-width: 426px) {
   .topPage .headingWrap {
     align-items: center;
+    min-height: calc(var(--vh-window) - var(--height-header) - var(--height-pcFooter));
   }
 }
 
 @media print, screen and (max-width: 425px) {
   .topPage .headingWrap {
     align-items: left;
+    min-height: calc(var(--vh-window) - var(--height-header) - var(--height-spFooter));
   }
 
   .topPage .headingWrap .spVisible {
@@ -775,10 +789,6 @@ footer .copyright {
 /* ./projectPage */
 
 /* contactPage */
-.contactPage {
-  min-height: calc(100vh - 30px);
-}
-
 .contactPage .description {
   text-align: center;
 }
