@@ -475,15 +475,17 @@ footer .copyright {
 
 .common .pageHeading {
   font-size: 32px;
+  font-weight: bold;
   line-height: 1;
   text-align: center;
 }
 
 .common .overview .heading {
   font-size: 18px;
+  font-weight: bold;
 }
 
-.common .overview .text {
+.common .overview .textWrap {
   margin-top: 20px;
 }
 
@@ -693,7 +695,6 @@ footer .copyright {
 }
 
 .projectsPage .item .overview .textWrap {
-  margin-top: 20px;
   position: relative;
 }
 
@@ -728,10 +729,6 @@ footer .copyright {
 /* projectPage */
 .projectPage {
   background-color: var(--color-white);
-}
-
-.projectPage .overview .editArea dl {
-  margin-top: 20px;
 }
 
 .projectPage .back {
