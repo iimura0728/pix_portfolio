@@ -678,7 +678,7 @@ footer .copyright {
 
 @media print, screen and (max-width: 767px) {
   .profilePage .spImage {
-    background-image: url("../img/profile_01.jpg");
+    /* background-image: url("../img/profile_01.jpg"); */
   }
 
   .profilePage .skill .list .item {
