@@ -31,7 +31,7 @@ Template Name: projects
                 <div class="overview">
                   <h2 class="heading"><?php the_title(); ?></h2>
                   <div class="textWrap"><?php limitContent($post,150); ?></div>
-                  <p class="next"><a class="btn" href="<?php the_permalink();?>">read more</a></p>
+                  <p class="next"><a class="btn" href="<?php the_permalink(); ?>">read more</a></p>
                 </div>
               </li>
               <?php
