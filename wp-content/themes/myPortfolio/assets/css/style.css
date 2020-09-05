@@ -312,15 +312,15 @@ header .glbNav .item .line {
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
-  transition: all 0.3;
+  transition: all 0.3s;
   width: 0%;
 }
 
-/* header .glbNav .item.current .line {
-  width: 140%;
-} */
-
 header .glbNav .item.current_page_item .line {
+  width: 140%;
+}
+
+header .glbNav .item.current-page-ancestor .line {
   width: 140%;
 }
 
