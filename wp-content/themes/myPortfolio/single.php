@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-      <!-- ---↓main--------------------------------------------------------------------- -->
       <main class="projectPage common mask">
         <div class="inner">
           <h1 class="pageHeading">Project overview</h1>
@@ -33,5 +32,4 @@
           ?>
         </div>
       </main>
-      <!-- ./main -->
 <?php get_footer(); ?>

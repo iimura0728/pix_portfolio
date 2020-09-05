@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-      <!-- ---↓main--------------------------------------------------------------------- -->
       <main class="topPage mask">
         <div class="inner">
           <div class="headingWrap">
@@ -8,5 +7,4 @@
           </div>
         </div>
       </main>
-      <!-- ./main -->
 <?php get_footer(); ?>

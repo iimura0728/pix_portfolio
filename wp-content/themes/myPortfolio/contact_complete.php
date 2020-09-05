@@ -5,7 +5,6 @@ Template Name: contact_complete
 ?>
 
 <?php get_header(); ?>
-      <!-- ---↓main--------------------------------------------------------------------- -->
       <main class="contactPage contactCompletePage common mask">
         <div class="inner">
           <h1 class="pageHeading">Contact</h1>
@@ -27,5 +26,4 @@ Template Name: contact_complete
           </div>
         </div>
       </main>
-      <!-- ./main -->
 <?php get_footer(); ?>

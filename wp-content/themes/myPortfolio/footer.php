@@ -1,4 +1,3 @@
-      <!-- ---↓footer--------------------------------------------------------------------- -->
       <footer class="mask">
         <div class="inner">
           <p class="copyright">

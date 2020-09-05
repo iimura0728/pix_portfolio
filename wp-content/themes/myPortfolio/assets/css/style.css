@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-header .inner {
-  padding-top: 40px;
-}
-
 :root {
   --color-font:#5c6470;
   --color-primary:#f8f8ff;
@@ -176,51 +172,8 @@ textarea {
   border-right: 9px solid var(--color-white);
 }
 /* ./btn */
-/* ./component------------------------------ */
 
-/* --global------------------------------ */
-.bodyInner {
-  min-height: var(--vh-window);
-  opacity: 0;
-  width: 100%;
-}
-
-.bodyInner.is-show {
-  animation: showBody 1s forwards;
-}
-
-.bodyInner.is-hide {
-  animation: hideBody 1s;
-}
-
-@keyframes showBody {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes hideBody {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-.mask {
-  transition: all 0.3s;
-}
-
-.mask.is-hide {
-  filter:blur(2px);
-}
-
+/* scrollIcon */
 @media print, screen and (min-width: 768px) {
   .scrollIcon {
     display: none;
@@ -270,6 +223,51 @@ textarea {
     }
   }
 }
+/* ./scrollIcon */
+/* ./component------------------------------ */
+
+/* --global------------------------------ */
+.bodyInner {
+  min-height: var(--vh-window);
+  opacity: 0;
+  width: 100%;
+}
+
+.bodyInner.is-show {
+  animation: showBody 1s forwards;
+}
+
+.bodyInner.is-hide {
+  animation: hideBody 1s;
+}
+
+@keyframes showBody {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hideBody {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.mask {
+  transition: all 0.3s;
+}
+
+.mask.is-hide {
+  filter:blur(2px);
+}
 
 @media print, screen and (min-width: 426px) {
   .spVisible {
@@ -312,7 +310,6 @@ header .glbNav .item .line {
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
-  transition: all 0.3s;
   width: 0%;
 }
 
@@ -832,10 +829,6 @@ footer .copyright {
 }
 
 @media print, screen and (max-width: 767px) {
-  .contactPage .spImage {
-    /* background-image: url("../img/contact_01.jpg"); */
-  }
-
   .contactPage .spVisible {
     display: block;
   }
@@ -872,7 +865,6 @@ footer .copyright {
 /* ./contactFormPage */
 
 /* contactConfirmPage */
-
 .contactConfirmPage .formSection .formItem .next.confirm {
   display: none;
 }

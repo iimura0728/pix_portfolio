@@ -5,7 +5,6 @@ Template Name: profile
 ?>
 
 <?php get_header(); ?>
-      <!-- ---↓main--------------------------------------------------------------------- -->
       <main class="profilePage common mask">
         <div class="inner">
           <h1 class="pageHeading">Profile</h1>
@@ -110,5 +109,4 @@ Template Name: profile
           </div>
         </div>
       </main>
-      <!-- ./main -->
 <?php get_footer(); ?>

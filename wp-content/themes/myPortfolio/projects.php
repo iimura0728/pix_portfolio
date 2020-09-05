@@ -5,7 +5,6 @@ Template Name: projects
 ?>
 
 <?php get_header(); ?>
-      <!-- ---↓main--------------------------------------------------------------------- -->
       <main class="projectsPage common mask">
         <div class="inner">
           <h1 class="pageHeading"><?php the_title(); ?></h1>
@@ -43,5 +42,4 @@ Template Name: projects
           </div>
         </div>
       </main>
-      <!-- ./main -->
 <?php get_footer(); ?>
