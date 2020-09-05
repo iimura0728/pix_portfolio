@@ -1,7 +1,6 @@
 <?php
 
 function readAssets(){
-  // wp_enqueue_script('jquery');
   wp_deregister_script('jquery');
   wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', array(), '1.12.14', true);
   wp_enqueue_script('my_jQuery',get_template_directory_uri().'/assets/js/common.js', array('jquery'), true);
