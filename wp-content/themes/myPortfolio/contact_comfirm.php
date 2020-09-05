@@ -8,12 +8,7 @@ Template Name: contact_confirm
       <main class="contactPage contactConfirmPage common mask">
         <div class="inner">
           <h1 class="pageHeading">Contact</h1>
-          <div class="spImageWrap">
-            <?php
-              $spImage_url = wp_get_attachment_url( get_post_thumbnail_id() );
-              $spImage_bg = "style='background-image:url(".$spImage_url.");'";
-            ?>
-            <div class="spImage"<?php echo $spImage_bg; ?>></div>
+          <?php get_template_part('includes/content','spImage'); ?>
           </div>
           <div class="contentsWrap">
             <p class="scrollIcon"><span></span></p>
