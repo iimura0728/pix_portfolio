@@ -1,8 +1,10 @@
 <?php
 
-function my_enqueue_scripts(){
-  wp_enqueue_script('jquery');
-  wp_enqueue_script('my_jQuery',get_template_directory_uri().'/assets/js/common.js',array());
+function readAssets(){
+  // wp_enqueue_script('jquery');
+  wp_deregister_script('jquery');
+  wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', array(), '1.12.14', true);
+  wp_enqueue_script('my_jQuery',get_template_directory_uri().'/assets/js/common.js', array('jquery'), true);
 
   wp_enqueue_style('my_reset',get_template_directory_uri().'/assets/css/reset.css',array());
   wp_enqueue_style('my_styles',get_template_directory_uri().'/assets/css/style.css',array());
@@ -42,7 +44,7 @@ function limitContent($post,$limit){
 }
 
 function wp_fook(){
-  add_action('wp_enqueue_scripts','my_enqueue_scripts');
+  add_action('wp_enqueue_scripts','readAssets');
   remove_filter('the_content', 'wpautop');
   remove_filter('the_excerpt', 'wpautop');
 }

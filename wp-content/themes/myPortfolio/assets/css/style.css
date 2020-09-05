@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+header .inner {
+  padding-top: 40px;
+}
+
 :root {
   --color-font:#5c6470;
   --color-primary:#f8f8ff;
@@ -57,6 +61,11 @@ input[type="text"], input[type="email"] {
   width: 100%;
 }
 
+button {
+  font-size: inherit;
+  outline: none;
+}
+
 textarea {
   border: 1px solid var(--color-primary);
   min-height: 300px;
@@ -73,7 +82,9 @@ textarea {
 /* --component------------------------------ */
 /* btn */
 .btn {
+  background-color: #ffffff;
   display: block;
+  height: 30px;
   margin-left: auto;
   padding-right: 14px;
   position: relative;
@@ -849,6 +860,10 @@ footer .copyright {
 /* ./contactPage */
 
 /* contactFormPage */
+.contactFormPage .formSection .formItem.fixAndSubmit {
+  display: none;
+}
+
 @media print, screen and (min-width: 426px) {
   .contactFormPage .formSection .formItem.btnWrap {
     justify-content: flex-end;
@@ -857,6 +872,11 @@ footer .copyright {
 /* ./contactFormPage */
 
 /* contactConfirmPage */
+
+.contactConfirmPage .formSection .formItem .next.confirm {
+  display: none;
+}
+
 @media print, screen and (min-width: 426px) {
   .contactConfirmPage .formSection .btnWrap {
     justify-content: center;
