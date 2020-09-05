@@ -677,10 +677,6 @@ footer .copyright {
 }
 
 @media print, screen and (max-width: 767px) {
-  .profilePage .spImage {
-    /* background-image: url("../img/profile_01.jpg"); */
-  }
-
   .profilePage .skill .list .item {
     width: 100%;
   }
@@ -696,11 +692,12 @@ footer .copyright {
   margin-top: 40px;
 }
 
-.projectsPage .item .overview .text {
+.projectsPage .item .overview .textWrap {
+  margin-top: 20px;
   position: relative;
 }
 
-.projectsPage .item .overview .text::after {
+.projectsPage .item .overview .textWrap::after {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 1));
   bottom: 0;
   content: "";
@@ -723,11 +720,7 @@ footer .copyright {
   .projectsPage .item .overview {
     margin-left: 30px;
     max-width: 600px;
-  }
-}
-@media print, screen and (max-width: 767px) {
-  .projectsPage .spImage {
-    background-image: url("../img/projects_01.jpg");
+    width: 100%;
   }
 }
 /* ./projectsPage */
@@ -766,7 +759,6 @@ footer .copyright {
 @media print, screen and (max-width: 767px) {
   .projectPage .spImage {
     background-color: var(--color-primary);
-    background-image: url("../img/mockup_somu-min.png");
     background-position: 50% 200px;
   }
 
@@ -833,7 +825,7 @@ footer .copyright {
 
 @media print, screen and (max-width: 767px) {
   .contactPage .spImage {
-    background-image: url("../img/contact_01.jpg");
+    /* background-image: url("../img/contact_01.jpg"); */
   }
 
   .contactPage .spVisible {
