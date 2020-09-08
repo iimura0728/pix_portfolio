@@ -9,7 +9,6 @@ Template Name: contact_confirm
         <div class="inner">
           <h1 class="pageHeading">Contact</h1>
           <?php get_template_part('includes/content','spImage'); ?>
-          </div>
           <div class="contentsWrap">
             <p class="scrollIcon"><span></span></p>
             <p class="description">
