@@ -537,9 +537,10 @@ footer .copyright {
     background-size: cover;
     padding-top: 120px;
     position: fixed;
-    position: absolute;
+    /* position: absolute; */
     top: 0%;
     width: 100%;
+    z-index: -1;
   }
 }
 
