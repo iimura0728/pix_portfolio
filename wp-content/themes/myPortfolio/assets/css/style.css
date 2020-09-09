@@ -849,7 +849,7 @@ footer .copyright {
 /* ./contactPage */
 
 /* contactFormPage */
-.contactFormPage .formSection .formItem.fixAndSubmit {
+.contactFormPage .formSection .formItem.fixAndSubmitBtnWrap {
   display: none;
 }
 
@@ -861,7 +861,7 @@ footer .copyright {
 /* ./contactFormPage */
 
 /* contactConfirmPage */
-.contactConfirmPage .formSection .formItem .next.confirm {
+.contactConfirmPage .formSection .formItem.confirmBtnWrap {
   display: none;
 }
 
