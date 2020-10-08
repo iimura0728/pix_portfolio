@@ -14,7 +14,7 @@ Template Name: contact_confirm
             <p class="description">
               以下の内容でお間違いがなければ、<br class="spVisible">送信ボタンを押してください。
             </p>
-            <div class="formSection" action="post">
+            <div class="formSection">
               <?php if (have_posts()): ?>
                 <?php while (have_posts()) : the_post(); ?>
                   <?php the_content(); ?>
